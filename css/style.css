@@ -50,7 +50,7 @@ h1.title
     font-family: JetBrainsMono,'Courier New', Courier, monospace;
     font-variant: normal; /* normal / small-caps */
     font-weight: 300;
-    font-size: 12.70820393249935vw;  /* % or em makes font zoomable -- 'pt' and 'px' makes it absolute */
+    font-size: 8.5vw;  /* % or em makes font zoomable -- 'pt' and 'px' makes it absolute */
     letter-spacing: 12px;
     text-align: center;
     display: flex;
@@ -164,11 +164,12 @@ p.center
     
 }
 
+img.real
+{
+    width: 75%;
+}
+
 @media only screen and (max-device-width: 480px) {
-    h1.title
-    {
-        font-size: 6em;
-    }
     p.center    
     {
         padding-left: 0%;
@@ -184,7 +185,13 @@ p.center
         padding-left: 0%;
         padding-right: 0%;
     }
+
+    img.real
+    {
+        width: 95%;
+    }
 }
+
 
 img
 {
@@ -194,6 +201,9 @@ img
     height: auto;
     /* cursor: pointer; */
 }
+
+
+
 
 img.title_img
 {
