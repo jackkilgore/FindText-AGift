@@ -6,14 +6,16 @@ function init_speech(pitch=1.0) {
     var voices = window.speechSynthesis.getVoices();
     let index = 0
     let count = 0
-    speechSynthesis.getVoices().forEach(function(voice) {
+    voices.forEach(function(voice) {
         if (voice.name === 'Victoria') {
             index = count
         }
         count += 1
-        console.log(voice.name, voice.default ? voice.default :'');
+        // console.log(voice.name, voice.default ? voice.default :'');
       });
-    console.log(count)
+    if (count === voices.length) {
+        count = 0
+    }
     msg.voice = voices[index]; 
     msg.volume = 1; // From 0 to 1
     msg.rate = 1.0; // 0.4 From 0.1 to 10
