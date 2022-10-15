@@ -1,3 +1,20 @@
+function plain_text_to_html(input_str) {
+    let output_str = input_str
+    output_str = output_str.replace(new RegExp('\r?\n','g'), '<br>')
+    // output_str.replace(/(?:\r\n|\r|\n)/g, "<br>")
+    return output_str
+}
+
+function get_num_lines(input_str) {
+    return input_str.split(new RegExp('\r?\n','g')).length
+}
+
+function plain_text_to_speech_text(input_str) {
+    let output_str = input_str
+    output_str = output_str.replace(new RegExp('\r?\n','g'), '\n\n')
+    return output_str
+}
+
 iter_0 = `
 A Gift
 
@@ -528,3 +545,343 @@ in
 each
 
 `
+
+mari_iter1 =
+`l
+Mari
+- onverged
+see it
+iM
+test how
+do you know about
+In
+each
+Mari?
+converged too, how do you know about Mari?
+what did 'A Gift" giray
+now
+do you know
+I see Mari in
+each
+moment?
+if
+about
+Mani?
+Htew
+did you kee
+I
+was thrilly
+fit?
+中4
+How do yau hado Maxi affect all suffut
+sel
+it on my walks, in the tidepols,
+in the dead
+animals,
+in the piotures of dead aninals, in youtube, in reality yV.
+How
+do
+you boo I see it
+in al fatale? In casual staring,
+in wicked
+I see it in
+the space after a run, any space not taken ups
+In
+every just emptied
+mouth.
+all silent
+in all just silent
+in all
+frilures
++0
+move, every failure
+5
+moul!
+For every move or die that collages into die. I see Mari
+For every move or die that collapses into mave. I see
++ keep
+waiting
+to maintain
+to
+nothing. I fours
+nothing
+maintain nothing, All
+to avoid Mari
+of the
+sit terest
+Conversed text,
+why did you reared
+Me
+the othe
+WhY
+dad
+you remind me of die.
+war`
+mari_iter1_speech =
+`l
+Mari
+
+- onverged
+see it
+iM
+test, how
+do you know about
+
+In
+each
+Mari?
+
+converged too, how do you know about Mari?
+
+what did 'A Gift" giray
+
+now
+do you know
+I see Mari in
+each
+moment?
+
+if
+about
+Mani?
+Htew
+did you kee
+I
+was thrilly
+fit?
+
+中4
+
+How do yau hado Maxi affect all suffut
+
+sel
+it on my walks, in the tidepols,
+in the dead
+animals,
+in the piotures of dead aninals, in youtube, in reality yV.
+How
+do
+you boo I see it
+in al fatale? In casual staring,
+in wicked
+
+I see it in
+the space after a run, any space not taken ups
+
+In
+every just emptied
+mouth.
+
+all silent
+
+in all just silent
+
+in all
+frilures
++0
+move, every failure
+5
+moul!
+
+For every move or die that collages into die. I see Mari
+
+For every move or die that collapses into mave. I see
++ keep
+waiting
+to maintain
+to
+nothing. I fours
+nothing. maintain nothing, All
+to avoid Mari, of the
+sit terest
+
+Conversed text,
+why did you reared
+Me
+
+the othe
+
+WhY
+dad,
+you remind me of die.
+
+war`
+
+
+mari_iter2 =
+`Mari
+see
+gnyerged
+{8 5o8% nor about
+each
+Mari?
+Chay°Gagd,£°giFt9'" dia you know about Mari?
+giray
+noW
+go.
+„Knqw
+each
+moment?
+Htew
+did you kee
+#f, thrilly
+Hoy do yau hado Maxi affect all suffut
+''''e*glks, in the tidepols,
+biotures of dead annals, in youtube, in
+feality yV.
+do
+YO" a Po fataff? tf casual staring,
+In,
+see
+swicked
+the space after a run, any space not taken ups
+seffitust emptied
+silent
+gove, every failure
+Pout
+every move or die that collages into die. I see
+Mari
+every move or die that collapses into mave. I see
+text
+the othe
+dad
+YOU
+remind me of die.
+
+war`
+
+mari_iter2_speech =
+`Mari
+see
+gnyerged,
+{8 5o8% nor about
+each
+Mari?
+Chay°Gagd,£°giFt9'" dia you know about Mari?
+giray
+noW
+go.
+„Knqw
+each
+moment?
+Htew
+did you kee
+#f, thrilly
+
+Hoy do yau hado Maxi affect all suffut
+
+''''e*glks, in the tidepols,
+biotures of dead annals, in youtube, in
+feality yV.
+do
+YO" a Po fataff? tf casual staring,
+
+In,
+see
+swicked
+the space after a run, any space not taken ups,
+seffitust emptied
+
+silent
+
+gove, every failure
+
+Pout
+
+every move or die that collages into die. I see
+Mari,
+every move or die that collapses into mave. I see
+text
+
+the othe,
+dad,
+YOU
+remind me of die.
+
+war`
+
+mari_iter3 =
+`Mari
+See
+98Y968%" nor about
+(86,2000, 5-01989-0 dia you knon about Marie
+Piment?
+Hoy, do
+in youtube, in
+Yo'" a Po fataff? tf casual staring,
+swicked
+Filteifift arbffed run, any space not taken ups
+POVE
+every failure
+Häffy move or die that collages into die. I see
+every move or die that collapses into mave. I see
+ER*t
+othe
+989
+remind me of die.
+war`
+
+mari_iter3_speech =
+`Mari
+See
+98Y968%" nor about
+(86,2000, 5-01989-0, dia you knon about Marie
+Piment?
+Hoy, do
+in youtube, in
+Yo'" a Po fataff? tf casual staring,
+swicked
+
+Filteifift arbffed run, any space not taken ups
+
+POVE
+every failure.
+Häffy move or die that collages into die. I see
+every move or die that collapses into mave. I see
+ER*t
+othe
+989
+
+remind me of die.
+
+war`
+
+mari_iter4 =
+`Mari
+ngrod?gyto dia you knon about Marie
+7. Youtybetatäff? tf casual staring,
+Biff*ffift aroffed run, any space not taken ups
+PietY moVe of die that soltagess"nito"Have!
+see
+see
+remind me of die.
+war`
+
+mari_iter4_speech =
+`Mari
+ngrod? gyto dia you knon about Marie.
+7. Youtybetatäff? tf casual staring
+
+Biff*ffift aroffed run, any space not taken ups
+
+PietY moVe of die that soltagess"nito"Have!
+
+see!
+see!
+
+remind me of die
+
+war`
+
+mari_iter5 =
+`thät'söltageaff
+see
+remind me of die
+war`
+
+mari_iter5_speech =
+`thät'söltageaff,
+see,
+remind me of die
+
+war`
