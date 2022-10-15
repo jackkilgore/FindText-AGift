@@ -15,33 +15,20 @@ function plain_text_to_speech_text(input_str) {
     return output_str
 }
 
-iter_0 = `
-A Gift
-
+gift_iter0 = `A Gift
 thank you for reminding me i exist beyond myself
-
 i exist in you, i see it in this gift
-
 we exist in each other
-
 i exist in each other
-
 we exist in you, i see it in this gift
-
 you exist in i, you’ll see it in this gift
-
 i promise, i promise we both exist in this gift
-
 we exist in each other
-
 we exist.
-
 i exist.
+thank you for reminding me i exist beyond myself.`
 
-thank you for reminding me i exist beyond myself.
-`
-
-iter_1 = `
+gift_iter1 = `
 exist in
 
 this
@@ -354,7 +341,7 @@ entitles mil atta text
 
 `
 
-iter_2 =
+gift_iter2 =
 `
 exist in
 Elept you
@@ -429,7 +416,7 @@ Phi
 mil atta text
 `
 
-iter_3 =
+gift_iter3 =
 `
 saöRt
 fifäRK your Tor
@@ -470,7 +457,7 @@ varill
 Mari
 `
 
-iter_4 =
+gift_iter4 =
 `
 fign
 Bachreitin
@@ -496,7 +483,7 @@ varill
 Mari
 `
 
-iter_5 =
+gift_iter5 =
 `
 dillingitin
 *häpksift in you I see it in
@@ -509,7 +496,7 @@ varill
 Mari
 `
 
-iter_6 =
+gift_iter6 =
 `
 {habisgHt'2n you I see it in
 terist,
@@ -519,7 +506,7 @@ taffegarwe shit in each
 Mar
 `
 
-iter_7 =
+gift_iter7 =
 `
 terRäfgHt'2n you I see it in
 other
@@ -527,14 +514,14 @@ Caffegänwe shit in each
 Marl
 `
 
-iter_8 =
+gift_iter8 =
 `
 tenfäfght'2n you I see it in
 Caffegänwe shit in each
 Mari
 `
 
-iter_9 =
+gift_iter9 =
 `
 Mari
 
